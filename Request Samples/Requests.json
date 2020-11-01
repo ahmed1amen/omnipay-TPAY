@@ -1,0 +1,109 @@
+{
+  "Add Subscription Contract": {
+    "Request": {
+      "signature": "fWSTecrqBB3UTIOl1orz: a7f414da9464b613d8a4b428e2599c28343ea5e01636530e96dbf97018eadd42",
+      "customerAccountNumber": "test",
+      "msisdn": "201289464963",
+      "operatorCode": "60201",
+      "subscriptionPlanId": 60919,
+      "initialPaymentproductId": "TestGame",
+      "initialPaymentDate": "2018-09-30 15:10:00Z",
+      "executeInitialPaymentNow": false,
+      "executeRecurringPaymentNow": false,
+      "recurringPaymentproductId": "TestGame",
+      "productCatalogName": "OrangeCatalog",
+      "autoRenewContract": true,
+      "sendVerificationSMS": true,
+      "allowMultipleFreeStartPeriods": false,
+      "contractStartDate": "2018-09-30 15:10:00Z",
+      "contractEndDate": "2019-11-20 15:10:00Z",
+      "language": 2,
+      "headerEnrichmentReferenceCode": "",
+      "smsId": "",
+      "sessionToken": "Hsdsauu76klk"
+    },
+    "Success_Response": {
+      "operationStatusCode": 0,
+      "subscriptionContractId": 2456899,
+      "paymentTransactionStatusCode": -1,
+      "transactionId": null,
+      "nextPaymentDate": null,
+      "errorMessage": "",
+      "subscriptionContractStatus": 0,
+      "msisdn": "201289464963"
+    },
+    "failure_Response": {
+      "operationStatusCode": 0,
+      "subscriptionContractId": 0,
+      "paymentTransactionStatusCode": 0,
+      "transactionId": null,
+      "nextPaymentDate": null,
+      "errorMessage": "Invalid Digest",
+      "subscriptionContractStatus": 0,
+      "msisdn": null
+    }
+  },
+  "Verification PIN Code": {
+    "Request": {
+      "signature": "fWSTecrqBB3UTIOl1orz:5d9d8caa5fb6098d487137c6a9016837b94db49b9fd0d9111d034f5a67b67fde",
+      "subscriptionContractId": 554083
+    },
+    "Success_Response": {
+      "operationStatusCode": 0,
+      "subscriptionContractId": 554083,
+      "errorMessage": null,
+      "responseCode": 0,
+      "paymentStatus": null
+    },
+    "failure_Response": {
+      "operationStatusCode": 51,
+      "subscriptionContractId": 0,
+      "errorMessage": "Invalid Subscription Contract Id",
+      "responseCode": 201,
+      "paymentStatus": null
+    }
+  },
+  "Verify Subscription Contract": {
+    "Request_parking period": {
+      "signature": "fWSTecrqBB3UTIOl1orz:5a0951375c100e2b0aef1d768620e9c19af52157c9fa98a21d14b37f220ae845",
+      "pinCode": "264851",
+      "subscriptionContractId": 554083
+    },
+    "Request_Initial payment": {
+      "signature": "fWSTecrqBB3UTIOl1orz:f9269fa6046ee82219406ce127f8a9b3da7647dcb3175388e75fb5b8b58bc77d",
+      "pinCode": "123124",
+      "subscriptionContractId": 123,
+      "charge": true,
+      "transactionId": 13435457
+    },
+  "Success_Response": {
+    "operationStatusCode": 0,
+    "subscriptionContractId": 554083,
+    "errorMessage": null,
+    "responseCode": 0,
+    "paymentStatus": null
+  },
+  "failure_Response": {
+    "operationStatusCode": 51,
+    "subscriptionContractId": 0,
+    "errorMessage": "Invalid Subscription Contract Id",
+    "responseCode": 201,
+    "paymentStatus": null
+  }
+
+  },
+
+
+  "Cancel existing subscription contract": {
+    "Request": {
+      "signature": "fWSTecrqBB3UTIOl1orz:5d9d8caa5fb6098d487137c6a9016837b94db49b9fd0d9111d034f5a67b67fde",     "subscriptionContractId": "554083"
+    },
+    "Success_Response": {
+      "operationStatusCode": 0,     "subscriptionContractId": 554083,     "paymentTransactionStatusCode": 51,     "transactionId": null,     "amountCharged": null,     "errorMessage": null
+    },
+    "failure_Response": {
+      "operationStatusCode": 51,     "subscriptionContractId": 0,     "paymentTransactionStatusCode": 51,     "transactionId": null,     "amountCharged": null,     "errorMessage": "Invalid Subscription Contract Id"
+    }
+  }
+}
+

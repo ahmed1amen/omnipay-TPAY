@@ -1,0 +1,25 @@
+{
+    "name": "ahmed1amen/omnipay-TPAY",
+    "description": "TPAY Integration",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ahmed Amen",
+            "email": "ahmed1amen.g@gmail.com"
+        }
+    ],
+    "require": {
+        "omnipay/common": "^3",
+      "ext-json": "*"
+    },
+    "autoload": {
+        "psr-4": { "Omnipay\\TPAY\\" : "src/" }
+    },
+    "prefer-stable": true,
+    "require-dev" : {
+        "omnipay/tests": "^3",
+      "ext-json": "*",
+        "symfony/var-dumper": "^5.1"
+    }
+}
